@@ -1,0 +1,95 @@
+﻿
+
+
+
+
+
+
+
+<form action="/Inicio/Create"  method="post">
+    <div class="container">
+        <label>Codigo_Registro</label>
+        <input type="text" name="Codigo_Registro" class="form-control" />
+    </div>
+    <div class="container">
+        <label>Fecha_Registro</label>
+        <input type="date" name="Fecha_registro" class="form-control" />
+    </div>
+    <div class="container">
+        <label>nombre de la mascota</label>
+        <input type="text" name="Nombre_mascota" class="form-control" />
+    </div>
+    <div class="container">
+        <label>nacimiento de la mascota</label>
+        <input id="Fecha" min="" onkeydown="return false" type="date" name="Fecha_nacimiento" class="form-control" autocomplete="off" />
+    </div>
+    <select name="Id_sexo" class="form-control">
+        <option value="">-- Selecciona sexo --</option>
+        @foreach (var item in ViewBag.sexo)
+        {
+            //if (item.Id == Model.mesa)
+            //{
+
+            <option value="@item.Id">@item.Nombre</option>
+            //}
+        }
+    </select>
+    <select name="Id_especie" class="form-control">
+        <option value="">-- Selecciona --</option>
+        @foreach (var item in ViewBag.especie)
+        {
+
+            <option value="@item.Id">@item.Nombre</option>
+        }
+    </select>
+    <select name="Id_raza" class="form-control">
+        <option value="">-- Selecciona--</option>
+        @foreach (var item in ViewBag.raza)
+        {
+
+            <option value="@item.Id">@item.Nombre</option>
+            //}
+        }
+    </select>
+    <div class="container">
+        <label>Tamañoa</label>
+        <input type="text" name="Tamaño" class="form-control" />
+    </div>
+    <div class="container">
+        <label>Datos</label>
+        <textarea name="Datos_particulares" class="form-control"> </textarea>
+    </div>
+    <div class="container">
+        <label>dueño</label>
+        <input type="text" name="Nombre_dueño" class="form-control" />
+    </div>
+    <div class="container">
+        <label>Direccion</label>
+        <input type="text" name="Direccion" class="form-control" />
+    </div>
+    <div class="container">
+        <label>telefono</label>
+        <input type="text" name="telefono" class="form-control" />
+    </div>
+    <div class="container">
+        <label>Email</label>
+        <input type="text" name="Email" class="form-control" />
+    </div>
+    <button>Guardar</button>
+    </form>
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var now = new Date();
+
+            var day = ("0" + now.getDate()).slice(-2);
+            var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+            var today = now.getFullYear() + "-" + (month) + "-" + (day);
+
+            $("#Fecha").attr("min", today);
+
+
+        });
+    </script>*@

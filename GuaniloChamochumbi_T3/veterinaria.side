@@ -1,0 +1,137 @@
+{
+  "id": "10ffebc3-8eb9-48c5-ba39-a68889e4c8d0",
+  "version": "2.0",
+  "name": "FinaciaApp",
+  "url": "https://localhost:44354/auth/login",
+  "tests": [{
+    "id": "82402e87-7cf5-4acf-8dfb-9f272e681781",
+    "name": "Login",
+    "commands": [{
+      "id": "6f304aaf-4be6-4adf-b9f7-50b1b31dbd1e",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d26b021d-a4b8-441c-8f51-b917a2547092",
+      "comment": "",
+      "command": "type",
+      "target": "id=Username",
+      "targets": [
+        ["id=Username", "id"],
+        ["name=Username", "name"],
+        ["css=#Username", "css:finder"],
+        ["xpath=//input[@id='Username']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jefri"
+    }, {
+      "id": "c0cc9aef-03c7-43d8-bd64-22728bd67116",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "ff47dee0-c6f4-4a3a-a1c2-229a2ff50940",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div/div/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "af305c45-5e1f-4149-adfb-5b247bde8608",
+    "name": "clicklogin",
+    "commands": [{
+      "id": "49dab033-ceed-497b-a3a6-fe468a2af684",
+      "comment": "",
+      "command": "click",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9cab4e38-96b7-4001-9480-86f1d4a5eda5",
+    "name": "CERRAR SESION",
+    "commands": [{
+      "id": "31452db0-3a89-45dd-98a7-b41bec2bf94d",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db2ec04e-188f-4070-9733-4a126c75e4d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=Username",
+      "targets": [
+        ["id=Username", "id"],
+        ["name=Username", "name"],
+        ["css=#Username", "css:finder"],
+        ["xpath=//input[@id='Username']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jefri"
+    }, {
+      "id": "14c003e9-54cd-443f-bb07-df0e37d70e25",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "27c01aaf-36fb-4ef7-99de-65e899d2cb28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='wrapper']/div/div/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b83efcfe-b250-40a8-a23c-31a0fc704fe9",
+      "comment": "",
+      "command": "click",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "af229a8d-2527-4fdc-8c33-909176bfe08c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["82402e87-7cf5-4acf-8dfb-9f272e681781"]
+  }],
+  "urls": ["https://localhost:44348/inicio/index", "https://localhost:44354/auth/login"],
+  "plugins": []
+}
